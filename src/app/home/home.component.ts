@@ -52,9 +52,17 @@ export class HomeComponent implements OnInit {
     this.data.changeGoal(this.goals);
   }
 
+  call(i: number) {
+    this.goals.splice(i, 1);
+    this.data.changeGoal(this.goals);
+  }
+
+
   removeItem(i: number) {
     this.goals.splice(i, 1);
     this.data.changeGoal(this.goals);
   }
+
+
 
 }
